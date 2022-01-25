@@ -9,6 +9,9 @@ sudo docker pull gitlab/gitlab-ce:latest
 
 sudo apt install -y mosh
 
+sudo echo 'set nu' > /home/ubuntu/.vimrc
+sudo echo 'set nu' > /root/.vimrc
+
 
 sudo mkdir /data
 
