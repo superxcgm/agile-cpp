@@ -6,12 +6,13 @@ sudo apt install -y net-tools
 sudo apt install -y docker-compose
 sudo usermod -aG docker ubuntu
 sudo docker pull gitlab/gitlab-ce:latest
+sudo docker pull docker:dind
+sudo docker pull jenkins/jenkins:2.289.2-lts
 
 sudo apt install -y mosh
 
 sudo echo 'set nu' > /home/ubuntu/.vimrc
 sudo echo 'set nu' > /root/.vimrc
-
 
 sudo mkdir /data
 
@@ -26,4 +27,4 @@ sudo mkdir /data
 # └─nvme0n1p1 259:1    0   20G  0 part /
 # nvme1n1     259:2    0   30G  0 disk /data
 
-#sudo mount /dev/nvme1n1 /data
+sudo mount /dev/nvme1n1 /data

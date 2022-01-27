@@ -5,6 +5,7 @@ services:
     restart: always
     environment:
       GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://ac.superxc.com:80'
         gitlab_rails['gitlab_shell_ssh_port'] = 63122
     ports:
       - '80:80'
